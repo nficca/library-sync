@@ -11,11 +11,8 @@ def main():
         print("Must specify two directories to synchronize")
         return
 
-    master = sys.argv[1]
-    copy = sys.argv[2]
-
     # synchronize master and copy
-    sync(master, copy)
+    sync(sys.argv[1], sys.argv[2])
 
 def pretty_print_path(msg, path):
     """prints a msg along with a nicer representation of the path given"""
